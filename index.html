@@ -1,18 +1,226 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoudStore</title>
+    <link rel="shortcut icon" type="image/jpg" href="./loudimg/LOUD_LOGO.svg" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        
+    <script src="https://kit.fontawesome.com/d652b9f554.js" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-    <title>PcInfo</title> 
 </head>
-  <body>
-    
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/src/img/logoloud.png" width="125px" alt="Logo da loja">
+                    </a>
+                </div>
+                <nav>
+                    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="conta.html">Conta</a></li>
+                    </ul>
+                </nav>
+                <a href="carrinho.html">
+                    <img src="./src/img/cart.png" width="30px" height="30px">
+                </a>
+                <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h2 class="chakra-heading css-1gkeq6c">UNIFORME OFICIAL</h2>
+                    <h2 class="chakra-heading css-xwny44">LOUD </h2>
+                    <p class="chakra-text css-18s4ayj">O nosso uniforme oficial com direção criativa de Pedro Andrade, da PIET, já está disponível!</p>
+                    <a href="#" class="btn">Veja Mais &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="/src/img/gifp.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="/src/img/uniforme.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="/src/img/camisetaloud.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="/src/img/CAMISETAS.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="small-container">
+        <h2 class="title">Mais Vendidos</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="produto.html"><img src="/src/img/shortin.jpg"></a>
+                <h4>SHORTIN CURTIN</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>R$ 179,00</p>
+            </div>
+            <div class="col-4">
+                <img src="/src/img/sentinela.jpg">
+                <h4>SENTINELA</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>R$ 89,00</p>
+            </div>
+            <div class="col-4">
+                <img src="/src/img/bonecapudin.jpg">
+                <h4>CAPUDIN</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>R$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="/src/img/camisetaloud.jpg">
+                <h4>BUGA PIXEL</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>R$50.00</p>
+            </div>
+        </div>
+        <h2 class="title">Novidades</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="/src/img/uniforme.jpg">
+                <h4>UNIFORME NOVO</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>R$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="/src/img/loudpiet.jpg">
+                <h4> LOUD X PIET</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>R$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="/src/img/CAMISETAS.jpg">
+                <h4>CAMISETAS</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>R$50.00</p>
+            </div>
+          
+        </div>
+    </div>
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="/src/img/compreagora.jfif" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Nova oferta</p>
+                    <h1>Camisa da noise</h1>
+                    <small>
+                        
+                    </small><br>
+                    <a href="#" class="btn">Compre Agora! &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Developer Web 1</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="/src/img/vanitas-destacada.jpg"">
+                    <h3>GabrielDevXD</h3>
+                </div>
+               
+        </div>
+    </div>
+    <div class="flexada">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        ...
+      </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                </div>
+                <div class="footer-col-2">
+                    <img src="/src/img/logoloud-removebg-preview.png">
+                    <p></p>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - GabrielDevXD</p>
+        </div>
+
+        <script src="./js/script.js"></script>
 
 
-  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    
-  </body>
+</body>
+
 </html>
