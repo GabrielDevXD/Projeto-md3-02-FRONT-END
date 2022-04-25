@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoudStore</title>
+    <link rel="shortcut icon" type="image/jpg" href="./loudimg/LOUD_LOGO.svg" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        
+    <script src="https://kit.fontawesome.com/d652b9f554.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/src/img/logoloud.png" width="125px" alt="Logo da loja">
+                    </a>
+                </div>
+                <nav>
+                    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h2 class="chakra-heading css-1gkeq6c">UNIFORME OFICIAL</h2>
+                    <h2 class="chakra-heading css-xwny44">LOUD </h2>
+                    <p class="chakra-text css-18s4ayj">O nosso uniforme oficial com direção criativa de Pedro Andrade, da PIET, já está disponível!</p>
+                </div>
+                <div class="col-2">
+                    <img src="/src/img/gifp.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="/src/img/uniforme.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="/src/img/camisetaloud.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="/src/img/CAMISETAS.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="Home__header Header">
+        <div class="row">
+            <div class="Header__logo Logo">
+            </div>
+            <div class="pesquisar">
+                <div class="searchInputWrapper">
+                  <input class="searchInput" type="number" id="idroupas" placeholder='Pesquise sua roupa'>
+                  <button class="search" onclick="findByIdroupas()"><i>ESCOLHER</button>
+                <a href="/" class="list-all">Voltar</a>
+            </div>
+        </div>
+    </header>
+    
+      <section class="modal-overlay" id="overlay">
+        <div class="modal">
+      
+            <div class="modal-header">
+                <h2 id="title-header-modal">Cadastrar uma roupa</h2>
+                <a onclick="fecharModalCadastro()" class="close-modal">x</a>
+            </div>
+      
+            <div class="modal-body">
+                <div>
+                    <input type="text" name="sabor" id="nome" placeholder="nome da roupa">
+                    <input type="number" name="preco" id="preco" placeholder="Preço da roupa">
+                    <textarea type="text" name="descricao" id="descricao" placeholder="Descrição"
+                        rows="5"></textarea>
+                    <input type="text" name="foto" id="foto" placeholder="Foto">
+                    <input type="hidden" id="id">
+                    <button class="test" onclick="addroupas()">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+      </section>
+      
+      <section class="modal-overlay" id="overlay-delete">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 id="title-header-modal">Confirmação de deleção</h2>
+                <a onclick="fecharModalDelete()" class="close-modal">x</a>
+            </div>
+            <div class="modal-body-delete">
+                <p>Deseja realmente apagar essa roupa?</p>
+                <div class="btns_delete">
+                    <button class="btn_delete" onclick="fecharModalDelete()" >Não</button>
+                    <button class="btn_delete "id="teste">Sim</button>
+                </div>
+            </div>
+        </div>
+      </section>
+    <div class="small-container">
+        <h2 class="title">Mais Vendidos</h2>
+        <section class="button-modal-create">
+            <button type="button" class="default-button" onclick="abrirModal()">Cadastrar roupa</button>
+          </section>
+        <div class="row">
+            <div id="Escolha-roupas"></div>
+            <div class="roupasList" id="roupas-List">
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Developer Web 1</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="/src/img/vanitas-destacada.jpg"">
+                    <h3>GabrielDevXD</h3>
+                </div>
+        </div>
+    </div>
+    <div class="flexada">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        ...
+      </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                </div>
+                <div class="footer-col-2">
+                    <img src="/src/img/logoloud-removebg-preview.png">
+                    <p></p>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - GabrielDevXD</p>
+        </div>
+        <script src="./js/script.js"></script>
+</body>
+
+</html>
