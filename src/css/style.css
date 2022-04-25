@@ -689,6 +689,20 @@ form a {
   border: 2px solid rgba(0,0,0,0.2);
   text-align: center;
  }
+ .btn_delete {
+  border: none;
+  color: rgb(231, 0, 0);
+  border-radius: .3rem;
+  padding: .5rem;
+  max-width: 280px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap ;
+ }
 @media only screen and (max-width: 800px) {
   nav ul {
     position: absolute;
